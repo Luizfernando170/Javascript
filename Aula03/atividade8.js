@@ -1,9 +1,9 @@
-let peso = (prompt("insira seu peso"));
-let altura = (prompt("insira sua altura"));
+let pesoUsuario = Number(prompt("insira seu peso"));
+let alturaUsuario = Number(prompt("insira sua altura"));
 let imc = (peso/(altura * altura));
 alert ("seu peso está saudável")
-if (peso <18.5) {
+if (imc <=18.5 && imc <=24.9) {
     alert ("seu peso está saudável");
-} else if (peso >24.9){
+} else {
     alert ("seu peso não está saudável");
-} 
+}

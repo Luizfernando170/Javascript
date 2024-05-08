@@ -1,6 +1,6 @@
-let idade = 17;
+let idade = number(prompt ("Digite sua idade"));
 if (idade >=18) {
-    console.log("você pode dirigir");
-} else if (idade <18) {
-    console.log("você ainda não pode dirigir");
+    alert("você pode dirigir");
+} else {
+    alert("você ainda não pode dirigir");
 }
