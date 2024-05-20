@@ -25,3 +25,13 @@ let raAlunos = alunos.map((RA)=>{
     return RA.RA
 })
 console.log(raAlunos);
+
+let Matriculado = alunos.map((Matriculado)=>{
+    return Matriculado.Matriculado
+})
+
+let nomeMaior = nomeAlunos.map((nomes)=>{
+    return nomes.toUpperCase()
+})
+
+console.log(nomeMaior);
