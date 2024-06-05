@@ -1,23 +1,27 @@
-let usuario1 = Number(document.querySelector(`tamanho`).value)
-let usuario2 = Number(document.querySelector(`peso`).value)
-let imc = psedousuario(tamanhodoUsuario * alturadoUsusario)
+const calcularIMC = () => {
+  let peso = Number(document.querySelector('#tamanho').value);
+  let altura = Number(document.querySelector('#peso').value);
+  let imc = (peso / (altura ** 2)).toFixed(2);
 
-let primeiro = document.getElementById("primeiro")
+ let resultado = document.querySelector('#primeiro');
+ resultado.innerHTML = `IMC ${IMC}`
 
-if (imc < 16.9) {
-    primeiro.innerHTML = "Muito abaixo do peso.";
-} else if (imc >= 16.9 && imc < 18.5) {
-    primeiro.innerHTML =  "Abaixo do peso.";
-} else if (imc >= 18.5 && imc < 24.9) {
-    primeiro.innerHTML =  "Peso normal.";
-} else if (imc >= 25 && imc < 29.9) {
-    primeiro.innerHTML = "Acima do peso.";
-} else if (imc >= 30 && imc < 34.9) {
-    primeiro.innerHTML = "Obesidade grau I.";
-} else if (imc >= 35 && imc < 39.9) {
-    primeiro.innerHTML = "Obesidade grau II.";
-} else if (imc >= 40) {
-    primeiro.innerHTML = "Obesidade grau III.";
+   if (imc < 16.9) {
+     resultado.innerHTML = `o seu IMC é: ${IMC}Muito abaixo do peso.`;
+     } else if (imc >= 16.9 && imc < 18.5) {
+      resultado.innerHTML =  `o seu IMC é: ${IMC}Abaixo do peso.`;
+     } else if (imc >= 18.5 && imc < 24.9) {
+      resultado.innerHTML =  `o seu IMC é: ${IMC}Peso normal.`;
+     } else if (imc >= 25 && imc < 29.9) {
+      resultado.innerHTML = `o seu IMC é: ${IMC}Acima do peso.`;
+     } else if (imc >= 30 && imc < 34.9) {
+      resultado.innerHTML = `o seu IMC é: ${IMC}Obesidade grau I.`;
+     } else if (imc >= 35 && imc < 39.9) {
+      resultado.innerHTML = `o seu IMC é: ${IMC} Obesidade grau II.`;
+     } else if (imc >= 40) {
+      resultado.innerHTML = `o seu IMC é: ${IMC} Obesidade grau III.`;
+     }
+
 }
 
 let calcular = document.querySelector("#botaoEnviar")
