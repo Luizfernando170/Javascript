@@ -6,7 +6,7 @@ body {
     font-family:'Open Sans';
     margin: 0;
     padding: 0;
-    background-color: #f8f8f8;
+    background-color:#5b6334;
 }
 
 .container {
@@ -17,28 +17,29 @@ body {
 
 header {
     display: grid; 
-    grid-template-columns: repeat(2, 1fr); 
-    grid-gap: 2rem; 
+    align-items: center;
     background: #f1f1f1; 
     margin-bottom: 2rem;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .logo img {
     width: auto;
-    height: 100%;
+    height: auto;
+    margin-right: 20px;
 }
 
 h1 {
     font-family:'Libre Baskerville';
-    margin: 0 0 0 0 ;
+    width: 100px;
     height: 10PX;
     color: #5b6334;
     font-size: 100px; 
-  
+    text-align: center;
 }
 
 main {
-    padding: 100px 500px;
+    padding: 50px 250px;
     font-family: 'Open Sans';
     background-color: #5b6334;
 }
@@ -56,6 +57,7 @@ p {
     color: #333;
     line-height: 1.6;
     padding: 10px;
+    font-weight: bold;
 }
 
 .caracteristicas {
@@ -94,9 +96,20 @@ footer p {
 .main2 {
     background-color:#f8f8f8;
     border-radius: solid;
+    margin: 100px;
+    padding: 100px;
+    text-align: justify;
+
 }
 
 .objeto img {
     width: 250px;
     height: auto;
+    
+}
+
+.informacaoMesa {
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat (6, 1fr);
 }
