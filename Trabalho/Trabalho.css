@@ -6,7 +6,7 @@ body {
     font-family:'Open Sans';
     margin: 0;
     padding: 0;
-    background-color:#5b6334;
+    background-color:#fff;
 }
 
 .container {
@@ -20,7 +20,7 @@ header {
     align-items: center;
     background: #f1f1f1; 
     margin-bottom: 2rem;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3 , 1fr);
 }
 
 .logo img {
@@ -51,6 +51,7 @@ section {
 h2 {
     color: #5b6334;
     padding: 10px;
+    text-align: left;
 }
 
 p {
@@ -69,8 +70,9 @@ p {
     padding: 0;
 }
 
-.caracteristicas ul li {
+.caracteristicas p {
     margin-bottom: 5px;
+    grid-template-columns: repeat(4, 1fr);
 }
 
 footer {
@@ -99,17 +101,27 @@ footer p {
     margin: 100px;
     padding: 100px;
     text-align: justify;
-
 }
 
 .objeto img {
     width: 250px;
     height: auto;
-    
+    float: left;
+    margin-right: 20px;
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .informacaoMesa {
     width: auto;
-    display: grid;
-    grid-template-columns: repeat (6, 1fr);
+    display: flex;
+    margin-right: 20px;
+    grid-template-columns: repeat (4, 1fr);
+}
+
+.grid{
+    overflow: hidden;
+}
+
+.button{
+    text-align: center;
 }
