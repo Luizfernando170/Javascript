@@ -56,7 +56,7 @@ h2 {
 
 p {
     color: #333;
-    line-height: 1.6;
+    line-height: 1.0;
     padding: 10px;
     font-weight: bold;
 }
@@ -116,10 +116,6 @@ footer p {
     display: flex;
     margin-right: 20px;
     grid-template-columns: repeat (4, 1fr);
-}
-
-.grid{
-    overflow: hidden;
 }
 
 .button{
