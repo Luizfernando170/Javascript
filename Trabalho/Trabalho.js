@@ -1,5 +1,6 @@
-public class OlaMundo {
-    public static void main(String[] args) {
-        System.out.println("Olá, Mundo!");
-    }
-}
+window.sr = ScrollReveal({ reset: true });
+
+sr.reveal('.area-1', {duration: 1000});
+sr.reveal('.area-2', {duration: 1000});
+sr.reveal('.area-3', {duration: 1000});
+sr.reveal('.area-4', {duration: 1000});

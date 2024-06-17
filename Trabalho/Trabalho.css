@@ -121,3 +121,7 @@ footer p {
 .button{
     text-align: center;
 }
+
+.area-1, .area-2, .area-3, .area-4{
+    visibility: hidden;
+}
